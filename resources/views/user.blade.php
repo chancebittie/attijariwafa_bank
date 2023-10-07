@@ -33,7 +33,7 @@
                             Solde disponible
                         </div>
                         <div class="row" style="font-size: 25px;">
-                            <strong >  46.983.200</strong>
+                            <strong >  50.699.00</strong>
                         </div>
                     </div>
                 </div>
