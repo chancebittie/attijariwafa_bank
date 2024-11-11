@@ -24,6 +24,8 @@ Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/user', [HomeController::class, 'home'])->name('user');
+Route::get('/virement', [HomeController::class, 'virement'])->name('virement');
+Route::get('/transaction', [HomeController::class, 'transaction'])->name('transaction');
 Route::get('/login_not_verify', [UserController::class, 'login'])->name('login_not_verify');
 Route::get('/about', [UserController::class, 'about'])->name('about');
 Route::get('/contact', [UserController::class, 'contact'])->name('contact');

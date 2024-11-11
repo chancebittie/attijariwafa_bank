@@ -9,7 +9,7 @@
 
                     <div class="col-md-12 mt-3  mx-auto">
                         <div class="input-group">
-                            <span class="input-group-text"> <i class="fas fa-user"></i> </span>
+                            <span class="input-group-text fs-3"> <i class="bi bi-person"></i> </span>
                             <div class="form-floating ">
                               <input type="text" wire:model.blur='name' class="form-control  @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}"  autocomplete="name" autofocus id="floatingInputGroup2" placeholder="Nom complet" required>
                               <label for="floatingInputGroup2">Nom complet</label>
@@ -24,7 +24,7 @@
 
                     <div class="col-md-12 mt-3  mx-auto">
                         <div class="input-group">
-                            <span class="input-group-text"> <i class="fas fa-user-check"></i> </span>
+                            <span class="input-group-text  fs-3"> <i class="bi bi-envelope-at-fill"></i> </span>
                             <div class="form-floating ">
                               <input type="email" wire:model.live='email' class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}"  autocomplete="email"  id="floatingInputGroup2" placeholder="Email" required>
                               <label for="floatingInputGroup2">Email</label>
@@ -37,11 +37,12 @@
                           @enderror
                     </div>
 
-                    <div class="col-md-12 mt-3  mx-auto">
+                    <div  x-data="{ eye: false }" class="col-md-12 mt-3  mx-auto">
                         <div class="input-group">
-                            <span class="input-group-text"> <i class="fas fa-eye-slash"></i> </span>
+                            {{-- <span class="input-group-text"> <i class="fas fa-eye-slash"></i> </span> --}}
+                            <button class="input-group-text fs-3" x-on:click=" eye =! eye "> <i x-bind:class=" eye ? 'bi bi-eye-fill' : 'bi bi-eye-slash-fill'"></i> </button>
                             <div class="form-floating ">
-                              <input type="text" wire:model.live='password_confirmation' class="form-control @error('password_confirmation') is-invalid @enderror" name="password_confirmation" value="{{ old('password_confirmation') }}"  autocomplete="password_confirmation"  id="floatingInputGroup4" required>
+                              <input x-bind:type=" eye ? 'text' : 'password'"  wire:model.live='password_confirmation' class="form-control @error('password_confirmation') is-invalid @enderror" name="password_confirmation" value="{{ old('password_confirmation') }}"  autocomplete="password_confirmation"  id="floatingInputGroup4" required>
                               <label for="floatingInputGroup2">Mots de passe</label>
                             </div>
                         </div>
@@ -52,11 +53,11 @@
                       @enderror
                     </div>
 
-                    <div class="col-md-12 mt-3  mx-auto">
+                    <div x-data="{ eye: false }" class="col-md-12 mt-3  mx-auto">
                         <div class="input-group">
-                            <span class="input-group-text"> <i class="fas fa-eye"></i> </span>
+                            <button class="input-group-text fs-3" x-on:click=" eye =! eye "> <i x-bind:class=" eye ? 'bi bi-eye-fill' : 'bi bi-eye-slash-fill'"></i> </button>
                             <div class="form-floating ">
-                              <input type="text" wire:model.live='password' class="form-control @error('password') is-invalid @enderror" name="password" value="{{ old('password') }}"  autocomplete="email"  id="floatingInputGroup3" placeholder="password" required>
+                              <input x-bind:type=" eye ? 'text' : 'password'" wire:model.live='password' class="form-control @error('password') is-invalid @enderror" name="password" value="{{ old('password') }}"  autocomplete="email"  id="floatingInputGroup3" placeholder="password" required>
                               <label for="floatingInputGroup3">Comfirmation</label>
                             </div>
                         </div>
@@ -71,8 +72,8 @@
                 </div>
 
 
-                    <div class="row mb-3">
-                        <div class="col-md-8 offset-md-4">
+                    <div class="row mb-3 mx-auto">
+                        <div class="col-md-12">
                             <button type="submit" class="btn {{ $errors->all() ? 'btn-danger disabled': 'btn-primary'}}">
                                 {{ __("s'inscrire") }}
                             </button>

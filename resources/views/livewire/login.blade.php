@@ -13,7 +13,7 @@
                                 <strong class="fs-5">IDENTIFIANT</strong>
 
                                 <div class="input-group ">
-                                    <span class="input-group-text"> <i class="fas fa-user-check"></i> </span>
+                                    <span class="input-group-text fs-3"> <i class="bi bi-person"></i> </span>
                                     <div class="form-floating ">
                                     <input type="tel" wire:model.live='identifiant' class="form-control @error('identifiant') is-invalid @enderror" name="identifiant" value="{{ old('identifiant') }}"  autocomplete="identifiant" autofocus id="floatingInputGroup2" placeholder="Identifiant" required>
                                     <label for="floatingInputGroup2"> Saisir votre identifiant a 11 chiffre </label>
@@ -30,7 +30,7 @@
                                 <strong class="fs-5">Email</strong>
 
                                 <div class="input-group ">
-                                    <span class="input-group-text"> <i class="fas fa-user-check"></i> </span>
+                                    <span class="input-group-text fs-3"> <i class="bi bi-envelope-at"></i> </span>
                                     <div class="form-floating ">
                                         {{-- <input type="tel" name="" id=""> --}}
                                     <input type="email" wire:model.live='email' class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}"  autocomplete="email" autofocus id="floatingInputGroup2" placeholder="Email" required>
@@ -48,7 +48,7 @@
                         <div  x-data="{ eye: false }" class="col-md-12 mt-3  mx-auto">
                             <strong class="fs-5">CODE PERSONNEL</strong>
                             <div class="input-group">
-                                <button class="input-group-text" x-on:click=" eye =! eye "> <i x-bind:class=" eye ? 'fas fa-eye' : 'fas fa-eye-slash'"></i> </button>
+                                <button class="input-group-text fs-3" x-on:click=" eye =! eye "> <i x-bind:class=" eye ? 'bi bi-eye-fill' : 'bi bi-eye-slash-fill'"></i> </button>
                                 <div class="form-floating ">
                                   <input x-bind:type=" eye ? 'text' : 'password'" wire:model.live='password' class="form-control @error('password') is-invalid @enderror" name="password" value="{{ old('password') }}"  autocomplete="password"  id="floatingInputGroup3" placeholder="password" required>
                                   <label for="floatingInputGroup3">Saisir votre code personnel</label>

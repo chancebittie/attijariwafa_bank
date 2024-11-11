@@ -13,7 +13,7 @@
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     @livewireStyles
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
@@ -63,6 +63,13 @@
                                 </li>
                             @endif
                         @else
+                            <li class="nav-item btn mx-2 btn-success rounded-pill  " >
+                                <a class="nav-link text-light" href="{{ route('virement') }}">{{ __('Faire un virement') }}</a>
+                            </li>
+                            <li class="nav-item btn mx-2 btn-danger rounded-pill  " >
+                                <a class="nav-link text-light" href="{{ route('transaction') }}">{{ __('Voir les transactions') }}</a>
+                            </li>
+
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }}
@@ -71,6 +78,12 @@
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('user') }}">
                                         {{ __('Mon compte') }}
+                                    </a>
+                                    <a class="dropdown-item" href="{{ route('virement') }}">
+                                        {{ __('Faire un virement') }}
+                                    </a>
+                                    <a class="dropdown-item" href="{{ route('transaction') }}">
+                                        {{ __('Les transactions') }}
                                     </a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
@@ -101,7 +114,7 @@
         #top_nav li a:hover{
             font-size: 19px;
             transition: 1s;
-            color: red;
+            color: red; 
             border-radius: 20px;
             background-color: white;
             box-shadow: inset  0 0 5px #ed6505,

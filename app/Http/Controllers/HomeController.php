@@ -30,4 +30,12 @@ class HomeController extends Controller
         // return view('index');
         return view('user');
     }
+    public function virement()
+    {
+        return view('virement');
+    }
+    public function transaction()
+    {
+        return view('transaction');
+    }
 }

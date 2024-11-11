@@ -2,11 +2,11 @@
 @section('content')
 <div class="container-fluid">
     {{-- <h1 class="text-center">BIENVENUE Sur votre espace compte</h1> --}}
-    <div class="col-10 mx-auto">
+    <div class="col-10 mt-4 mx-auto">
         <p class="text-center text-light binks  rounded mt-2" style="font-size: 30px;font-weight:bold;">compte bloqué !!!</p>
     </div>
 
-    <div class="col-md-10 mx-auto mt-1">
+    <div class="col-md-10 mx-auto mt-1 shadow-lg px-5 py-5">
         <div class="row">
             <div class="col-md-6 mt-2 ">
                 <div class="row tp mx-1 shadow py-3">
@@ -33,41 +33,16 @@
                             Solde disponible
                         </div>
                         <div class="row" style="font-size: 25px;">
-                            <strong >  50.699.00</strong>
+                            <strong >  35.399.134.00
+                                {{-- DH --}}
+                                <img src="uploads/images/symbole.jpg" width="30" height="30" alt="">
+                            </strong>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 mt-2 ">
-                <div class="row tp mx-1 shadow py-3">
-                    <div class="col-4 px-3 pt-2 text-center" >
-                        <h1 class="py-2" style="background-color: rgb(236, 121, 184);border-radius:10px;"><i class="bi bi-cash-stack text-light "></i></h1>
-                    </div>
-                    <div class="col">
-                        <div class="row" style="font-size: 25px;">
-                            <strong > 100.000.000</strong>
-                        </div>
-                        <div class="row">
-                            Depôt
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mt-2 ">
-                <div class="row tp shadow mx-1 py-3">
-                    <div class="col-4 px-3  pt-2 text-center">
-                        <h1 class="py-2" style="background-color: rgb(165, 121, 236);border-radius:10px;"><i class="bi bi-arrow-clockwise text-light"></i></h1>
-                    </div>
-                    <div class="col">
-                        <div class="row" style="font-size: 25px;">
-                            <strong > 53.016.800</strong>
-                        </div>
-                        <div class="row">
-                            Retrait
-                        </div>
-                    </div>
+                    {{-- <div class="col">
+                        <img src="uploads/images/symbole.jpg" width="70" alt="">
+                    </div> --}}
+
                 </div>
             </div>
         </div>
@@ -88,16 +63,16 @@
                 </div>
             </div>
             <div class="col-md-6 mt-2 ">
-                <div class="row tp shadow py-3 mx-1">
-                    <div class="col-4 px-3 pt-2 text-center" >
-                        <h1 class="py-2" style="background-color: rgb(121, 132, 236);border-radius:10px;"><i class="bi bi-check-square text-light"></i></h1>
+                <div class="row tp shadow mx-1 py-3">
+                    <div class="col-4 px-3  pt-2 text-center">
+                        <h1 class="py-2" style="background-color: rgb(165, 121, 236);border-radius:10px;"><i class="bi bi-arrow-clockwise text-light"></i></h1>
                     </div>
                     <div class="col">
                         <div class="row" style="font-size: 25px;">
-                            <strong >10.000.000</strong>
+                            <strong > 53.016.800</strong>
                         </div>
                         <div class="row">
-                            Prêt
+                            Retrait
                         </div>
                     </div>
                 </div>

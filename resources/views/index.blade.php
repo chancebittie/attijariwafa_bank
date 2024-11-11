@@ -56,21 +56,6 @@
             </div>
             <div class="row">
                 <div class="col-md-6 mt-2 ">
-                    <div class="row tp mx-1 shadow py-3">
-                        <div class="col-4 px-3 pt-2 text-center" >
-                            <h1 class="py-2" style="background-color: rgb(236, 121, 184);border-radius:10px;"><i class="bi bi-cash-stack text-light "></i></h1>
-                        </div>
-                        <div class="col">
-                            <div class="row" style="font-size: 25px;">
-                                <strong > 100.000.000</strong>
-                            </div>
-                            <div class="row">
-                                Depôt
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mt-2 ">
                     <div class="row tp shadow mx-1 py-3">
                         <div class="col-4 px-3  pt-2 text-center">
                             <h1 class="py-2" style="background-color: rgb(165, 121, 236);border-radius:10px;"><i class="bi bi-arrow-clockwise text-light"></i></h1>
@@ -85,8 +70,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
                 <div class="col-md-6 mt-2 ">
                     <div class="row tp shadow mx-1 py-3">
                         <div class="col-4  px-3  pt-2 text-center">
@@ -98,21 +81,6 @@
                             </div>
                             <div class="row">
                                 Transaction
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mt-2 ">
-                    <div class="row tp shadow py-3 mx-1">
-                        <div class="col-4 px-3 pt-2 text-center" >
-                            <h1 class="py-2" style="background-color: rgb(121, 132, 236);border-radius:10px;"><i class="bi bi-check-square text-light"></i></h1>
-                        </div>
-                        <div class="col">
-                            <div class="row" style="font-size: 25px;">
-                                <strong >10.000.000</strong>
-                            </div>
-                            <div class="row">
-                                Prêt
                             </div>
                         </div>
                     </div>
